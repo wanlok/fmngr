@@ -7,7 +7,7 @@ public class Rename {
     List<String> filePaths = Directory.list(path);
     for (String filePath : filePaths) {
       File file = new File(filePath);
-      Date date = FileUtils.getDate(file);
+      Date date = FileUtils.getImageDate(file);
       String extension = FileUtils.getExtension(file);
       if (date != null && extension != null) {
         FileUtils.rename(file, date, extension);

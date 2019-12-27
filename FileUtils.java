@@ -40,7 +40,7 @@ public class FileUtils {
     FileUtils.rename(file, simpleDateFormat.format(date), extension, 1);
   }
 
-  public static Date getDate(File file) {
+  public static Date getImageDate(File file) {
     Date date = null;
     try {
       Metadata metadata = ImageMetadataReader.readMetadata(file);
